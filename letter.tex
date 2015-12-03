@@ -1,0 +1,58 @@
+\documentclass[DIN, pagenumber=false, parskip=half, fromalign=right, fromrule=false,fromlogo]{scrlttr2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{lmodern}% Latin Modern typeface (font)
+\RequirePackage{graphicx}
+
+\renewcommand{\familydefault}{\sfdefault} % Latin Modern's sans serif font family as default
+
+% if you have a word with just uppercase letter you should use the package soul
+% for better readability
+\usepackage{soul}
+\sodef\so{}{.14em}{.4em plus.1em minus .1em}{.4em plus.1em minus .1em}
+ 
+ % do not indent the signature
+\renewcommand*{\raggedsignature}{\raggedright} 
+
+ % the sender:
+\setkomavar{fromname}{Steve Clement}
+\setkomavar{fromaddress}{87 route de Thionville \\ L-2611, Luxembourg \\ c/o: Level2 HackerSpace}
+\setkomavar{signature}{Steve Clement \\ CoderDojo Luxembourg Champion}
+\setkomavar{fromlogo}{\includegraphics[height=5\baselineskip]{img/logo}}
+
+ 
+\begin{document}
+ 
+% the receiver:
+\begin{letter}{\so{To all CoderDojo} Participants}
+
+%===================================
+\opening{Dear Coders,}
+
+CoderDojo Luxembourg is a CodeClub Luxembourg project driven by volunteers to teach coding and technologies to youngsters aged 9 to 18.
+
+For the past year a steady group of 15-20 Kids has gathered in the heart of Luxembourg-City every Thursday no matter the weather. 
+
+\textbf{On} the 15th of December 2015 we will have a spontaneous Pop-up CoderDojo at the eskills4jobs conference from 13:00 to 14:30 in Dommeldange at the Parc Hotel Alvisse.
+
+The exact address is:
+
+120, Route d{\textquotesingle}Echternach \\
+L-1453 Luxembourg \\
+
+During this pop-up CoderDojo we will be programming small Radio Controlled devices to autonomously steer themselves through an obstacle course. 
+
+To register \textbf{send an email to} \url{info@corderdojo.lu}. We have only \textbf{limited} places.
+
+For more information on eskills4jobs visit their official site: \url{http://eskills4jobs.lu/}
+
+\closing{Sincerely yours,}
+
+%===================================
+%% \setkomavar*{enclseparator}{Attached} 
+%% \encl{Proposal detail}
+\end{letter}
+\end{document}
