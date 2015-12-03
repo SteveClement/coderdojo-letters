@@ -1,15 +1,17 @@
 % koma_env.tex
-\documentclass[a4paper]{scrlttr2}
+\documentclass[a4paper, fromlogo]{scrlttr2}
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{url}
+\usepackage{graphics}
 
 
-\setkomavar{fromname}{Joe Bloggs}
-\setkomavar{fromaddress}{21 Bridge Street \\ Smallville \\ Dunwich DU3 4WE}
-\setkomavar{fromphone}{0123 45679}
+\setkomavar{fromname}{CoderDojo Luxembourg c/o: Steve Clement}
+\setkomavar{fromaddress}{87, Route de Thionville \\ Bonnevoie \\ L-2611 Luxembourg}
+\setkomavar{fromphone}{+352 691 20 33 66}
+\setkomavar{fromlogo}{\includegraphics{img/logo.png}}
 
 \begin{document}
 
@@ -17,8 +19,8 @@
 \\ Newport \\ Ipswich IP3 5RT}
 
 \KOMAoptions{fromphone=true,fromfax=false}
-\setkomavar{subject}{Wikipedia}
-\setkomavar{customer}{2342}
+\setkomavar{subject}{eSkills 4 Jobs 2015 - Pop-up CoderDojo}
+% \setkomavar{customer}{2342}
 \opening{Dear Sir or Madam,}
 
 I am writing to you on behalf of the Wikipedia project
